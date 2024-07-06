@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "departamentos")
+@Table(name = "Departamentos")
 public class Departamentos {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,6 +30,13 @@ public class Departamentos {
 	public Departamentos(Long iddpto, String nombre, String telefono, String fax) {
 		super();
 		this.iddpto = iddpto;
+		this.nombre = nombre;
+		this.telefono = telefono;
+		this.fax = fax;
+	}
+	
+	public Departamentos(String nombre, String telefono, String fax) {
+		super();
 		this.nombre = nombre;
 		this.telefono = telefono;
 		this.fax = fax;
