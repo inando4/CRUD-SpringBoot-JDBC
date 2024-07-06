@@ -23,7 +23,54 @@ public class Departamentos {
 	@Column(name = "fax", nullable=false)
 	private String fax;
 	
-	
-	
+	public Departamentos(){
+		
+	}
 
+	public Departamentos(Long iddpto, String nombre, String telefono, String fax) {
+		super();
+		this.iddpto = iddpto;
+		this.nombre = nombre;
+		this.telefono = telefono;
+		this.fax = fax;
+	}
+
+	public Long getIddpto() {
+		return iddpto;
+	}
+
+	public void setIddpto(Long iddpto) {
+		this.iddpto = iddpto;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
+	public String getFax() {
+		return fax;
+	}
+
+	public void setFax(String fax) {
+		this.fax = fax;
+	}
+
+	@Override
+	public String toString() {
+		return "Departamentos [iddpto=" + iddpto + ", nombre=" + nombre + ", telefono=" + telefono + ", fax=" + fax
+				+ "]";
+	}
+	
 }
