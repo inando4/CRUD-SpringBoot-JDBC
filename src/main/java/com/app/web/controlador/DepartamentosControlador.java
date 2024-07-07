@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.app.web.entidad.Departamentos;
 import com.app.web.servicio.DepartamentosServicio;
 
 @Controller
@@ -16,5 +17,12 @@ public class DepartamentosControlador {
 	public String listarDepartamentos(Model modelo) {
 		modelo.addAttribute("departamentos", servicio.listarDepartamentos());
 		return "departamentos"; //nos retorna al archivo estudiantes
+	}
+	
+	@GetMapping("/departamentos/nuevo")
+	public String crearDepartamentoFormula(Model modelo) {
+		Departamentos departamento = new Departamentos();
+		modelo.addAttribute("departamento", departamento);
+		return "crearDepartamento";
 	}
 }
