@@ -6,5 +6,6 @@ import com.app.web.entidad.*;
 public interface DepartamentosServicio {
 	public List<Departamentos> listarDepartamentos();
 	
+	public Departamentos guardarDepartamentos(Departamentos departamento);
 	
 }

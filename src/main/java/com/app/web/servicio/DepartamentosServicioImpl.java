@@ -18,5 +18,12 @@ public class DepartamentosServicioImpl implements DepartamentosServicio {
 	public List<Departamentos> listarDepartamentos() {
 		return repositorio.findAll();
 	}
+
+	@Override
+	public Departamentos guardarDepartamentos(Departamentos departamento) {
+		return repositorio.save(departamento);
+				
+				
+	}
 	
 }

@@ -28,10 +28,31 @@
                 <h1 class="text-center">Registro de Departamentos</h1>
                 <div class="card-body">
                     <form th:action="@{/departamentos}" th:object="${departamento}" method="POST">
+
                         <div class="form-group">
                             <label>Nombre: </label>
-                            <input type="text" name="nombre" th:field="*{nombre}" class="form-control" placeholder="Digite el nombre: ">
+                            <input type="text" name="nombre" th:field="*{nombre}" class="form-control" placeholder="Digite el nombre: " required >
                         </div>
+                        <br>
+
+                        <div class="form-group">
+                            <label>Teléfono: </label>
+                            <input type="text" name="telefono" th:field="*{telefono}" class="form-control" placeholder="Digite el teléfono: " required >
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <label>Fax: </label>
+                            <input type="text" name="fax" th:field="*{fax}" class="form-control" placeholder="Digite el fax: " required >
+                        </div>
+                        <br>
+
+                        <div class="box-booter">
+                            <button class="btn btn-success">Guardar</button>
+                        </div>
+                        
+
+
                     </form>
                 </div>
 

@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.app.web.entidad.Departamentos;
 import com.app.web.servicio.DepartamentosServicio;
@@ -24,5 +26,11 @@ public class DepartamentosControlador {
 		Departamentos departamento = new Departamentos();
 		modelo.addAttribute("departamento", departamento);
 		return "crearDepartamento";
+	}
+	
+	@PostMapping("/departamentos")
+	public String guardarEstudiantes(@ModelAttribute("departamento") Departamentos departamento   ) {
+		servicio.guardarDepartamentos(departamento);
+		return "redirect:/departamentos";
 	}
 }
