@@ -27,7 +27,7 @@ public class Departamentos {
 		
 	}
 
-	public Departamentos(Long iddpto, String nombre, String telefono, String fax) {
+	public Departamentos(Integer iddpto, String nombre, String telefono, String fax) {
 		super();
 		this.iddpto = iddpto;
 		this.nombre = nombre;
@@ -42,11 +42,11 @@ public class Departamentos {
 		this.fax = fax;
 	}
 
-	public Long getIddpto() {
+	public Integer getIddpto() {
 		return iddpto;
 	}
 
-	public void setIddpto(Long iddpto) {
+	public void setIddpto(Integer iddpto) {
 		this.iddpto = iddpto;
 	}
 
