@@ -14,13 +14,13 @@ public class Departamentos {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer iddpto;
 	
-	@Column(name = "nombre", nullable=false)
+	@Column(name = "Nombre", nullable=false)
 	private String nombre;
 	
-	@Column(name = "telefono", nullable=false)
+	@Column(name = "Telefono", nullable=true)
 	private String telefono;
 	
-	@Column(name = "fax", nullable=false)
+	@Column(name = "Fax", nullable=true)
 	private String fax;
 	
 	public Departamentos(){
