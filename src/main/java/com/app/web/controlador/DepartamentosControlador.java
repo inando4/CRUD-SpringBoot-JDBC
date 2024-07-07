@@ -14,7 +14,7 @@ public class DepartamentosControlador {
 	
 	@GetMapping({"/departamentos","/"})
 	public String listarDepartamentos(Model modelo) {
-		modelo.addAttribute("estudiantes", servicio.listarDepartamentos());
+		modelo.addAttribute("departamentos", servicio.listarDepartamentos());
 		return "departamentos"; //nos retorna al archivo estudiantes
 	}
 }

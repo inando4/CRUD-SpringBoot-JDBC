@@ -21,12 +21,12 @@ public class CrudSpringBootJdbcApplication implements CommandLineRunner{
 	
 	@Override
 	public void run(String... args) throws Exception {
+		/*
 		Departamentos departamento1 = new Departamentos("Departamento1", "937352876", "12345");
 		repositorio.save(departamento1);
 		
 		Departamentos departamento2= new Departamentos("Departamento2","999999","982984");
 		repositorio.save(departamento2);
+		*/
 	}
-
-
 }
