@@ -16,8 +16,7 @@ public class DepartamentosServicioImpl implements DepartamentosServicio {
 	
 	@Override
 	public List<Departamentos> listarDepartamentos() {
-		// TODO Auto-generated method stub
-		return null;
+		return repositorio.findAll();
 	}
 	
 }

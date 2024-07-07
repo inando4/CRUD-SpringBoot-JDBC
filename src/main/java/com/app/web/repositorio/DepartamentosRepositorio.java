@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import com.app.web.entidad.*;
 
 @Repository
-public interface DepartamentosRepositorio extends JpaRepository<Departamentos, Long> {
+public interface DepartamentosRepositorio extends JpaRepository<Departamentos, Integer> {
 	
 }

@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 public class Departamentos {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long iddpto;
+	private Integer iddpto;
 	
 	@Column(name = "nombre", nullable=false)
 	private String nombre;
