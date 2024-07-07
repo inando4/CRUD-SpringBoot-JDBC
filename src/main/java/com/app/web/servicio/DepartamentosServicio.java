@@ -8,4 +8,10 @@ public interface DepartamentosServicio {
 	
 	public Departamentos guardarDepartamentos(Departamentos departamento);
 	
+	public Departamentos obtenerDepartamentoPorId(Integer iddpto);
+
+	public Departamentos actualizarDepartamento(Departamentos departamento);
+	
+	public void eliminarDepartamento(Integer iddpto);
+	
 }

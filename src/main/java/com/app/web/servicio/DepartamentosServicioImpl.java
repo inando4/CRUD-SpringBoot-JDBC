@@ -21,9 +21,22 @@ public class DepartamentosServicioImpl implements DepartamentosServicio {
 
 	@Override
 	public Departamentos guardarDepartamentos(Departamentos departamento) {
+		return repositorio.save(departamento);		
+	}
+
+	@Override
+	public Departamentos obtenerDepartamentoPorId(Integer iddpto) {
+		return repositorio.findById(iddpto).get();
+	}
+
+	@Override
+	public Departamentos actualizarDepartamento(Departamentos departamento) {
 		return repositorio.save(departamento);
-				
-				
+	}
+
+	@Override
+	public void eliminarDepartamento(Integer iddpto) {
+		repositorio.deleteById(iddpto);
 	}
 	
 }
